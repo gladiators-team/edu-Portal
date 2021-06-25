@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    gap: 20px;
+    
+    }
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 60, 255);
+    align-items:flex-end;
+    justify-content:first baseline;
+    
+    
+
+}
+header img{
+    width: 200px;
+    height: 100px;
+}
+header nav{
+    padding: 0 20px;
+}
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    margin: 0 10px;
+  }
+  select{
+      width: 300px;
+    
+      
+  }
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+main :nth-child(2){
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 40px;
+    margin: auto;
+    align-items:center;
+    justify-content:space-around;
+}
+
+  footer{
+    background-color: rgb(0, 60, 255);
+  }
