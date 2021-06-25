@@ -84,20 +84,17 @@ body {
 header nav {
   text-align: right;
 }
-
 header nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   padding: 8px 12px;
 }
-
 header nav a:hover {
   background: #fff;
   color: #2f5d62;
   position: relative;
 }
-
 header nav a:hover::after {
   content: '';
   width: 100%;
@@ -107,7 +104,6 @@ header nav a:hover::after {
   position: absolute;
   background: #ffb037;
 }
-
 .text-box {
   width: 90%;
   color: #fff;
@@ -142,6 +138,8 @@ header nav a:hover::after {
   position: relative;
   width: 100%;
   display: flex;
+  background: #162c3b;
+  overflow: hidden;
 }
 .about .contentBox {
   background: #162c3b;
@@ -149,12 +147,13 @@ header nav a:hover::after {
   width: 50%;
 }
 .textBox {
-  transform: scale(0.1);
+  position: relative;
+  left: -500px;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
 .active {
-  transform: scale(1);
+  left: 0;
   opacity: 1;
 }
 .heading {
@@ -178,16 +177,46 @@ header nav a:hover::after {
   line-height: 1.5;
   letter-spacing: 1px;
 }
-.about .imgBox {
+.imgBox1 {
   background: url('../homepage/img/window.jpg');
   width: 50%;
   background-size: cover;
   background-position: center;
+  position: relative;
+  right: -500px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active1 {
+  right: 0;
+  opacity: 1;
 }
 .services {
   background: #12222d;
   padding: 100px;
   text-align: center;
+  position: relative;
+}
+.headingText {
+  position: relative;
+  width: 500px;
+  left: 700px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active2 {
+  left: 400px;
+  opacity: 1;
+}
+.pText {
+  position: relative;
+  left: -200px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active3 {
+  left: 0;
+  opacity: 1;
 }
 .serviceBox {
   width: 100%;
@@ -203,6 +232,7 @@ header nav a:hover::after {
   width: 350px;
   height: 400px;
   padding-top: 125px;
+  z-index: 10;
 }
 .serviceBox div img {
   max-width: 100px;
@@ -215,6 +245,36 @@ header nav a:hover::after {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+.service1 {
+  position: relative;
+  left: -100px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active4 {
+  left: 0px;
+  opacity: 1;
+}
+.service2 {
+  position: relative;
+  top: 300px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active5 {
+  top: 0px;
+  opacity: 1;
+}
+.service3 {
+  position: relative;
+  left: 100px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active6 {
+  left: 0px;
+  opacity: 1;
+}
 .technology {
   background: #3f8ffc;
   width: 100%;
@@ -224,51 +284,103 @@ header nav a:hover::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .technology .contentBox {
   max-width: 800px;
 }
-.technology .imgBox {
+.technology .imgBox2 {
   max-width: 250px;
 }
-.technology .imgBox img {
+.technology .imgBox2 img {
   max-width: 100%;
+}
+.textBox2 {
+  position: relative;
+  left: -100px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active7 {
+  left: 0;
+  opacity: 1;
+}
+.imgBox2 {
+  position: relative;
+  left: 100px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active8 {
+  left: 0px;
+  opacity: 1;
 }
 .client {
   background: #162c3b;
   padding: 100px;
   text-align: center;
 }
-.client .imgBox {
+.client .imgBox3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 40px;
 }
-.client .imgBox img {
+.client .imgBox3 img {
   width: 200px;
   margin: 20px;
   opacity: 0.25;
   cursor: pointer;
 }
-.client .imgBox img:hover {
+.client .imgBox3 img:hover {
   opacity: 1;
 }
-.testimonials {
+.headingText1 {
+  position: relative;
+  width: 500px;
+  left: 700px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active9 {
+  left: 400px;
+  opacity: 1;
+}
+.pText1 {
+  position: relative;
+  left: -200px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active10 {
+  left: 0px;
+  opacity: 1;
+}
+.imgBox3 {
+  position: relative;
+  top: 200px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active11 {
+  top: 0px;
+  opacity: 1;
+}
+.feedBack {
   position: relative;
   padding: 100px;
   background: #12222d;
   text-align: center;
 }
-.testimonials .container {
+.feedBack .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
   flex-wrap: wrap;
 }
-.testimonials .container .contentBox {
+.feedBack .container .contentBox {
   background: #fff;
   padding: 60px 50px;
   width: 550px;
@@ -287,13 +399,71 @@ header nav a:hover::after {
   font-weight: 500;
   color: #3f8ffc;
 }
+.headingText2 {
+  position: relative;
+  top: -200px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active12 {
+  top: 0px;
+  opacity: 1;
+}
+.contentBox1 {
+  position: relative;
+  left: -100px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active13 {
+  left: 0px;
+  opacity: 1;
+}
+.contentBox2 {
+  position: relative;
+  left: 100px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active14 {
+  left: 0px;
+  opacity: 1;
+}
 .contact {
   padding: 100px;
   background: #162c3b;
   text-align: center;
 }
-.imgBox2 {
-  background: url('../homepage/img/bg2.jpg');
+.headingText3 {
+  position: relative;
+  top: -200px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active15 {
+  top: 0px;
+  opacity: 1;
+}
+.pText2 {
+  position: relative;
+  left: -200px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active16 {
+  left: 0px;
+  opacity: 1;
+}
+.quaries {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background: #162c3b;
+  overflow: hidden;
+}
+.imgBox4 {
+  position: relative;
+  background: url('../homepage/img/think.jpg');
   background-size: cover;
   background-position: center;
   width: 50%;
@@ -344,6 +514,16 @@ header nav a:hover::after {
   background: #fff;
   color: #111;
   font-weight: 400;
+}
+.form {
+  position: relative;
+  left: -500px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active17 {
+  left: 0px;
+  opacity: 1;
 }
 .footer {
   background: #162c3b;
