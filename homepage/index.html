@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -15,11 +16,11 @@
       <div class="banner">
         <div id="slider">
           <div class="images">
-            <img src="img1/1.png">
-            <img src="img1/2.png">
-            <img src="img1/3.png">
-            <img src="img1/4.png">
-            <img src="img1/1.png">
+            <img src="../homepage/img1/1.png">
+            <img src="../homepage/img1/2.png">
+            <img src="../homepage/img1/3.png">
+            <img src="../homepage/img1/4.png">
+            <img src="../homepage/img1/1.png">
           </div>
         </div>
         <div class="overlay">
@@ -63,67 +64,70 @@
         </p>
       </div>
     </div>
-    <div class="imgBox"></div>
+    <div class="imgBox1"></div>
   </section>
 
   <section class="services">
-    <h2 class="heading">Our Services</h2>
-    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto rerum iure sed iusto optio
+    <h2 class="heading headingText">Our Services</h2>
+    <p class="text pText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto rerum iure sed iusto
+      optio
       impedit quos
-      veritatis aliquid. Nisi et odit, odio, nam aliquid ullam quas illum fuga non quisquam sequi sint pariatur nesciunt
+      veritatis aliquid. Nisi et odit, odio, nam aliquid ullam quas illum fuga non quisquam sequi sint pariatur
+      nesciunt
       dignissimos id? Assumenda quam saepe corporis cumque, quia esse, asperiores deleniti corrupti, eum iste eveniet
       quos.</p>
     <div class="serviceBox">
-      <div>
+      <div class="service1">
         <img src="img/icon1.png" alt="">
         <h2 class="heading1">Design</h2>
       </div>
-      <div>
+      <div class="service2">
         <img src="img/icon2.png" alt="">
         <h2 class="heading1">Programming</h2>
       </div>
-      <div>
+      <div class="service3">
         <img src="img/icon3.png" alt="">
         <h2 class="heading1">Marketing</h2>
       </div>
     </div>
   </section>
   <section class="technology">
-    <div class="contentBox">
+    <div class="contentBox textBox2">
       <h2 class="heading">We use cutting edge technology</h2>
       <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, minima cum earum dolores ab iste,
         voluptas explicabo cumque accusamus temporibus itaque et, assumenda officia. Nobis dolorum error sequi et libero
         aliquid beatae suscipit fugiat tempora autem, cum quisquam cupiditate soluta fugit provident expedita rerum
         doloribus quis dignissimos possimus dolor neque.</p>
     </div>
-    <div class="imgBox">
+    <div class="imgBox2">
       <img src="img/tech.png" alt="">
     </div>
   </section>
 
   <section class="client">
-    <div class="heading">Our Client</div>
-    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio quia possimus, obcaecati dicta
+    <div class="heading headingText1">Our Client</div>
+    <p class="text pText1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio quia possimus, obcaecati
+      dicta
       excepturi reiciendis. Excepturi sint eius suscipit, quia, nemo officiis cum consequuntur laborum cupiditate rem id
       saepe, deleniti vero doloremque nostrum! Minus recusandae vitae error vel quod tenetur mollitia minima repellat ut
       doloremque, perspiciatis magni eligendi eius.</p>
-    <div class="imgBox">
+    <div class="imgBox3">
       <img src="img/brand1.png">
       <img src="img/brand2.png">
       <img src="img/brand3.png">
       <img src="img/brand4.png">
     </div>
   </section>
-  <section class="testimonials">
-    <h2 class="heading">What Our Client says</h2>
+  <section class="feedBack">
+    <h2 class="heading headingText2">What Our Client says</h2>
     <div class="container">
-      <div class="contentBox">
+      <div class="contentBox contentBox1">
         <div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quae?</p><br>
           <h3>Someone Famous</h3>
         </div>
       </div>
-      <div class="contentBox">
+      <div class="contentBox contentBox2">
         <div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quae?</p><br>
           <h3>Someone Famous</h3>
@@ -133,8 +137,9 @@
   </section>
 
   <section class="contact">
-    <h2 class="heading">Contact Us</h2>
-    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, iure illo quia saepe aliquam animi
+    <h2 class="heading headingText3">Contact Us</h2>
+    <p class="text pText2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, iure illo quia saepe aliquam
+      animi
       aut? Animi sed modi nostrum blanditiis accusamus? Quisquam accusamus eum soluta facere, labore nesciunt nobis rem
       tenetur aspernatur? Impedit ducimus minus rem sapiente nesciunt consectetur optio id! Dolorem consequatur repellat
       nobis eius tempore. Sed, omnis!</p>
@@ -142,15 +147,15 @@
 
   <section class="about">
     <div class="contentBox redBg">
-      <div class="form">
+      <form class="form">
         <div class="inputBox">
-          <input type="text" name="" placeholder="Full Name">
+          <input type="text" name="name" placeholder="Full Name">
         </div>
         <div class="inputBox">
-          <input type="text" name="" placeholder="Email Address">
+          <input type="email" name="email" placeholder="Email Address">
         </div>
         <div class="inputBox">
-          <input type="text" name="" placeholder="Mobile No.">
+          <input type="number" name="Mobile" placeholder="Mobile No.">
         </div>
         <div class="inputBox">
           <textarea placeholder="Write your message here"></textarea>
@@ -158,9 +163,9 @@
         <div class="inputBox">
           <button type="submit">Send</button>
         </div>
-      </div>
+      </form>
     </div>
-    <div class="imgBox2"></div>
+    <div class="imgBox4"></div>
   </section>
 
   <section class="footer">
