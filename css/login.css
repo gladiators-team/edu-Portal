@@ -121,3 +121,15 @@ button:hover {
   margin-left: 200px;
   margin-top: 20px;
 }
+
+
+legend {
+  font-size: 30px;
+}
+
+
+
+.a {
+  margin-left: -30px;
+}
+
