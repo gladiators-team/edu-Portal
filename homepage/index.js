@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
   let content = document.querySelector('.imgBox1');
   let contentPosition = content.getBoundingClientRect().top;
-  let secreenPosition = window.innerHeight / 2;
+  let secreenPosition = window.innerHeight / 1.5;
   if (contentPosition < secreenPosition) {
     content.classList.add('active1');
   } else {
@@ -180,3 +180,64 @@ window.addEventListener('scroll', () => {
     content.classList.remove('active17');
   }
 });
+
+let commentForm = document.getElementById('commentForm');
+function Comments(name, massege) {
+  this.name = name;
+  this.massege = massege;
+  Comments.allComments.push(this);
+}
+Comments.allComments = [];
+
+let commentRender = document.getElementById('commentRender');
+let renderContainer = document.createElement('div');
+renderContainer.classList = 'renderContainer';
+commentRender.appendChild(renderContainer);
+function renderAll() {
+  for (let i = 0; i < Comments.allComments.length; i++) {
+    let divElement1 = document.createElement('div');
+    divElement1.classList = 'renderBox';
+    renderContainer.appendChild(divElement1);
+    let divElement2 = document.createElement('div');
+    divElement1.appendChild(divElement2);
+    let pElement = document.createElement('p');
+    pElement.textContent = Comments.allComments[i].massege;
+    let headingElement = document.createElement('h3');
+    headingElement.textContent = Comments.allComments[i].name;
+    divElement2.appendChild(pElement);
+    divElement2.appendChild(headingElement);
+  }
+}
+
+function render(name, massege) {
+  let divElement1 = document.createElement('div');
+  divElement1.classList = 'renderBox';
+  renderContainer.appendChild(divElement1);
+  let divElement2 = document.createElement('div');
+  divElement1.appendChild(divElement2);
+  let pElement = document.createElement('p');
+  pElement.textContent = massege;
+  let headingElement = document.createElement('h3');
+  headingElement.textContent = name;
+  divElement2.appendChild(pElement);
+  divElement2.appendChild(headingElement);
+}
+function createComment(event) {
+  event.preventDefault();
+
+  let name = event.target.name.value;
+  let massege = event.target.massege.value;
+  let newComment = new Comments(name, massege);
+  render(name, massege);
+  localStorage.setItem('data', JSON.stringify(Comments.allComments));
+  commentForm.reset();
+}
+commentForm.addEventListener('submit', createComment);
+function updateData() {
+  let allData = JSON.parse(localStorage.getItem('data'));
+  if (allData) {
+    Comments.allComments = allData;
+  }
+  renderAll();
+}
+updateData();
