@@ -68,6 +68,10 @@ body {
     left: -400%;
   }
 }
+.logo img {
+  width: 175px;
+  height: 50px;
+}
 .overlay {
   width: 100%;
   height: 100vh;
@@ -94,15 +98,16 @@ header nav a:hover {
   background: #fff;
   color: #2f5d62;
   position: relative;
+  border-radius: 5px;
 }
 header nav a:hover::after {
   content: '';
   width: 100%;
-  height: 2px;
+  height: 3px;
   left: 0;
   bottom: 0;
   position: absolute;
-  background: #ffb037;
+  background: #5cc3db;
 }
 .text-box {
   width: 90%;
@@ -117,21 +122,25 @@ header nav a:hover::after {
   font-size: 36px;
   margin-bottom: 20px;
 }
+.text-box span {
+  color: #5cc3db;
+}
 .btn {
   display: inline-block;
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
-  border-radius: 25px;
+  border-radius: 30px;
   padding: 12px 34px;
-  font-size: 15px;
+  font-size: 18px;
   background: transparent;
   position: relative;
   cursor: pointer;
 }
 .btn:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
+  border: 1px solid #5cc3db;
+  background: #5cc3db;
+  color: #000;
   transition: 1s;
 }
 .about {
@@ -144,6 +153,7 @@ header nav a:hover::after {
 .about .contentBox {
   background: #162c3b;
   padding: 100px;
+  padding-top: 30px;
   width: 50%;
 }
 .textBox {
@@ -158,10 +168,11 @@ header nav a:hover::after {
 }
 .heading {
   color: #fff;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
+  text-align: center;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .text {
   color: #fff;
@@ -170,15 +181,17 @@ header nav a:hover::after {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
-.about .contentBox p {
+.about .contentBox ol li {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
+  text-align: justify;
   letter-spacing: 1px;
+  padding-bottom: 30px;
 }
 .imgBox1 {
-  background: url('../homepage/img/window.jpg');
+  background: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2)), url('../homepage/img/offer.jpg');
   width: 50%;
   background-size: cover;
   background-position: center;
@@ -189,7 +202,7 @@ header nav a:hover::after {
 }
 .active1 {
   right: 0;
-  opacity: 1;
+  opacity: 0.7;
 }
 .services {
   background: #12222d;
@@ -228,10 +241,10 @@ header nav a:hover::after {
 }
 .serviceBox div {
   position: relative;
-  background: #fff;
-  width: 350px;
-  height: 400px;
-  padding-top: 125px;
+  background: #d2edfa;
+  width: 250px;
+  height: 250px;
+  padding-top: 50px;
   z-index: 10;
 }
 .serviceBox div img {
@@ -276,11 +289,11 @@ header nav a:hover::after {
   opacity: 1;
 }
 .technology {
-  background: #3f8ffc;
+  background: #5cc3db;
   width: 100%;
   padding: 100px;
   padding-top: 300px;
-  margin-top: -300px;
+  margin-top: -225px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -289,8 +302,12 @@ header nav a:hover::after {
 .technology .contentBox {
   max-width: 800px;
 }
+.technology .contentBox .text {
+  font-style: normal;
+  font-size: 20px;
+}
 .technology .imgBox2 {
-  max-width: 250px;
+  max-width: 200px;
 }
 .technology .imgBox2 img {
   max-width: 100%;
@@ -429,6 +446,36 @@ header nav a:hover::after {
   left: 0px;
   opacity: 1;
 }
+.commentRender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.renderContainer {
+  margin-top: 20px;
+}
+.renderBox {
+  background: #fff;
+  padding: 60px 30px;
+  width: 550px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.renderBox p {
+  font-style: italic;
+  color: #000;
+  padding-bottom: 20px;
+}
+.renderBox h3 {
+  width: 100%;
+  text-align: end;
+  font-weight: 500;
+  color: #3f8ffc;
+}
 .contact {
   padding: 100px;
   background: #162c3b;
@@ -463,13 +510,13 @@ header nav a:hover::after {
 }
 .imgBox4 {
   position: relative;
-  background: url('../homepage/img/think.jpg');
+  background: url('../homepage/img/Comment.jpg');
   background-size: cover;
   background-position: center;
   width: 50%;
 }
 .redBg {
-  background: url('../homepage/img/red.jpg') !important;
+  background: #d2edfa !important;
   background-size: cover;
   background-position: center;
 }
@@ -485,11 +532,11 @@ header nav a:hover::after {
   padding: 10px 0;
   font-size: 18px;
   font-weight: 300;
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  color: #000;
+  border-bottom: 2px solid #000;
 }
 .form .inputBox input::placeholder {
-  color: #fff;
+  color: #000;
 }
 .form .inputBox textarea {
   width: 100%;
@@ -500,20 +547,28 @@ header nav a:hover::after {
   padding: 10px 0;
   font-size: 18px;
   font-weight: 300;
-  color: #fff;
+  color: #000;
   min-height: 150px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
 }
 .form .inputBox textarea::placeholder {
-  color: #fff;
+  color: #000;
 }
 .form .inputBox button {
   width: 150px;
   height: 50px;
   font-size: 18px;
-  background: #fff;
-  color: #111;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #162c3b;
+  color: #d2edfa;
   font-weight: 400;
+  outline: none;
+  box-shadow: 5px 5px 5px #162c3b;
+}
+.form .inputBox button:active {
+  background: #d2edfa;
+  color: #000;
 }
 .form {
   position: relative;
