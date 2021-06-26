@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    gap: 0px;
+    font-family: 'Kalam', cursive;
+     
+    } 
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 60, 255);
+    align-items:flex-end;
+    justify-content:first baseline;
+    
+     
+}
+header img{
+    width: 200px;
+    height: 100px;
+}
+header nav{
+    padding: 0 20px;
+}
+
+
+#login {
+display: block;
+}
+
+#formLogo {
+  height: 150px;
+  width: 150px;
+  display: block;
+} 
+
+
+form {
+/* display: flex; */
+  height: 800px;
+  width: 500px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+   
+   
+    margin-top: 100px;
+}
+
+ .formLogo {
+    
+        display: block;
+        margin-left: 30%;
+        margin-right: 70%;
+        width: 50%;
+      }
+
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px ;
+  box-sizing: border-box;
+}
+
+label {
+    margin-left: 20px;
+}
+
+footer{
+  background-color: rgb(0, 60, 255);
+}
+
+
+ 
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+} 
+
+fieldset {
+    background-color:white;
+    border: 1px rgb(153, 183, 248) solid;
+    border-radius: 60px;
+    width: 500px;
+    height: 500px;
+  }
+
+  
+
+
+  button {
+      text-align: center;
+      font-family: 'Kalam', cursive;
+     
+  }
+
+  main {
+    background-image: url(https://www.ramstarab.com/wp-content/uploads/2018/09/%D8%AE%D9%84%D9%81%D9%8A%D8%A9-%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D9%88%D8%A7%D9%86.jpg)
+  }
+
+
+
+
+button:hover {
+  transform: scale(1.3);
+}
