@@ -26,61 +26,50 @@
         <div class="forms">
             <div id="firstForm">
                 <form>
-                    
+
                     <fieldset>
-                        <legend>Instructor Registeration</legend>
+                        <legend> Registeration</legend>
                         <div class="formLogo">
                             <img src="https://www.adab.com/assets/images/default_profile.png" id="formLogo" alt="">
                         </div>
                         <br><br><br>
-                        <label for="fname">Full Name</label><br>
+                        <label for="fname">Name</label><br>
                         <input type="text" id="fullName" name="fullName" value=""><br>
-                        <label for="lname">Major</label><br>
-                        <input type="text" id="major" name="major" value=""><br>
-                        <label for="lname">E-mail</label><br>
-                        <input type="text" id="email" name="email" value=""><br>
-                        <label for="lname">User Name</label><br>
-                        <input type="text" id="username" name="username" value=""><br>
-                        <label for="lname">Password</label><br>
-                        <input type="text" id="password" name="password" value=""><br>
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password" name="password" value=""><br><br>
 
+                        <label for="major">Major</label><br>
+                        <select name="major" id="major">
+                            <div id="option">
+                                <option value="select">Select Major </option>
+                                <option value="Programming">Programming </option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Design">Design</option>
+                            </div>
+                        </select>
+                        <br>
+                        <div class="checkbox">
+                            <label >Join As Instructor</label>
+                            <input type="checkbox" id="checkbox" value="checkbox">
+                            
+
+                        </div>
+                        <br><br>
                         <div class="submit1">
-                            
-                            <button type="submit" value="Submit" id="submit">Submit</button> 
+
+                            <button type="submit" value="Submit" id="submit">Submit</button>
                         </div>
+                        <br>
+                        <div class="a">
+                        <a href="login.html">Already Have Account</a>
+                    </div>
                     </fieldset>
-                    </form>
+                </form>
 
             </div>
-            <div id="secondForm">
-                <form>
-                    
 
-                    <fieldset>
-                        <legend>Student Registeration</legend>
-                        <div class="formLogo">
-                            <img src="https://www.adab.com/assets/images/default_profile.png" id="formLogo" alt="">
-                        </div>
-                        <br><br><br>
-                        <label for="fname">Full Name</label><br>
-                        <input type="text" id="fullName" name="fullName" value=""><br>
-                        <label for="lname">Major</label><br>
-                        <input type="text" id="major" name="major" value=""><br>
-                        <label for="lname">E-mail</label><br>
-                        <input type="text" id="email" name="email" value=""><br>
-                        <label for="lname">User Name</label><br>
-                        <input type="text" id="username" name="username" value=""><br>
-                        <label for="lname">Password</label><br>
-                        <input type="text" id="password" name="password" value=""><br>
-
-                        <div class="submit2">
-                            
-                            <button type="submit" value="Submit" id="submit">Submit</button> 
-                        </div>
-                    </fieldset>
-                    </form>
-            </div>
         </div>
+
     </main>
 
 
