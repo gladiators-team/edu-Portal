@@ -115,3 +115,9 @@ fieldset {
 button:hover {
   transform: scale(1.3);
 }
+
+
+.center {
+  margin-left: 200px;
+  margin-top: 20px;
+}
