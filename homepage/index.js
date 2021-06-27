@@ -227,6 +227,7 @@ function createComment(event) {
 
   let name = event.target.name.value;
   let massege = event.target.massege.value;
+  console.log(event);
   let newComment = new Comments(name, massege);
   render(name, massege);
   localStorage.setItem('data', JSON.stringify(Comments.allComments));

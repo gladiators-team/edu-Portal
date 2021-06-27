@@ -401,7 +401,6 @@ header nav a:hover::after {
   background: #fff;
   padding: 60px 50px;
   width: 550px;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -446,29 +445,28 @@ header nav a:hover::after {
   left: 0px;
   opacity: 1;
 }
-.commentRender {
+.renderContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
   flex-wrap: wrap;
-}
-.renderContainer {
   margin-top: 20px;
 }
 .renderBox {
   background: #fff;
   padding: 60px 30px;
   width: 550px;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   text-align: left;
+  margin-bottom: 20px;
 }
 .renderBox p {
   font-style: italic;
   color: #000;
   padding-bottom: 20px;
+  max-width: 500px;
 }
 .renderBox h3 {
   width: 100%;
