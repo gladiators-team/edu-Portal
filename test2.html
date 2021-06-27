@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+    <fieldset>
+
+     
+    <div id="coursesNames"> 
+
+        <legend>Add New Course</legend>
+        <form id="addcourse">
+          <label for="CourseName">Course Name</label>
+          <input type="text" name="CourseName" id="CourseName" placeholder="">
+  
+          <label for="CourseDescription">Description</label>
+          <input type="text" name="description" id="description">
+  
+          <label for="instructor">instructor Name</label>
+          <input type="text" name="instructor" id="instructor">
+
+          <label for="cost">Cost</label>
+          <input type="number" name="cost" id="cost">
+
+          <label for="courseImage">Image</label>
+          <input type="text" name="courseImage" id="courseImage" placeholder="https://www.w3schools.com/html/html_form_elements.asp">
+  
+          
+          <button type="submit" id="addCourse">Add</button>
+        </form>
+ 
+</div>
+</fieldset>
+
+<div id="allCourses">
+    <div id="displayData"></div>
+    
+</div>
+
+ </body>
+ <script src="./addCorurse.js"></script>
+ </html>
