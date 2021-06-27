@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./css/login.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,24 +24,24 @@
     <main>
         <!-- <h2>Text input fields</h2> -->
 
-        <form>
+        <form id="formLogin">
             <fieldset>
                 <legend>Login</legend>
                 <div class="formLogo">
-                <img src="https://www.adab.com/assets/images/default_profile.png" id = "formLogo"  alt="">
-            </div>
-<br><br><br>
-          <label for="fname">Username</label><br>
-          <input type="text" id="username" name="username" value=""><br>
-          <label for="lname">Password</label><br>
-          <input type="text" id="password" name="password" value=""><br>
-          <div class="center">
-          <button type="submit" value="Submit"  id="login" >Log in</button><br>
-          <div class="a">
-          <a href="Registeration.html">Create Account</a>
-        </div>
-        </div>
-        </fieldset>
+                    <img src="https://www.adab.com/assets/images/default_profile.png" id="formLogo" alt="">
+                </div>
+                <br><br><br>
+                <label for="userName">Username</label><br>
+                <input type="text" id="username" name="userName"><br>
+                <label for="lname">Password</label><br>
+                <input type="text" id="password" name="password"><br>
+                <div class="center">
+                    <button type="submit" value="submit" id="login">Login</button><br>
+                    <div class="a">You don't have an Account?
+                        <a href="Registeration.html">Create Account?</a>
+                    </div>
+                </div>
+            </fieldset>
         </form>
 
     </main>
@@ -49,6 +49,7 @@
 
     <footer></footer>
 </body>
-<!-- <script src="./javascript/cours.js"></script> -->
+<script src="./javascript/login.js"></script>
+
 
 </html>
