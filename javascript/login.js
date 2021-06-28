@@ -16,11 +16,10 @@ function checkUser(event) {
       if ((userinfo[index].name === userName) && (userinfo[index].password === userPassword)) {
       
         
-        window.location.assign("/homepage/index.html");
+        window.location.assign("/index.html");
         break;
       } else {
-        
-        alert.style.display = 'block' 
+        Swal.fire('Incorrect Name Or Password')
         break;
       }
     }

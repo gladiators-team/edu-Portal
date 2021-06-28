@@ -2,28 +2,20 @@
     box-sizing: border-box;
 }
 body{
-    display: grid;
-    grid-template-rows: 100px 1fr 50px;
-    gap: 0px;
-    font-family: 'Kalam', cursive;
+  position:relative;
+  background-image: url('./homepage/img1/image1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover ;
+  z-index: -10;
+  width: 100%;
+    height: auto;
      
-    } 
-header{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(0, 60, 255);
-    align-items:flex-end;
-    justify-content:first baseline;
-    
+} 
+
      
-}
-header img{
-    width: 200px;
-    height: 100px;
-}
-header nav{
-    padding: 0 20px;
-}
+
 
 
 #login {
