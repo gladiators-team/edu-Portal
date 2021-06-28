@@ -1,14 +1,13 @@
 
 
 'use strict';
-
-let kittenProcoursesNamesfiles = document.getElementById('kittenProfiles');
+let loginToCnfirme=document.getElementById('loginToCnfirme');
 let addcourse = document.getElementById('addcourse')
 let displayData=document.getElementById('displayData');
 
-// console.log(catForm);
 
-function Cat(name, discription, cost,  instructor, image) {
+
+function Add(name, discription, cost,  instructor, image) {
   this.name = name;
   this.discription = discription;
   this.cost = cost;
@@ -17,11 +16,31 @@ function Cat(name, discription, cost,  instructor, image) {
   this.instructor = instructor;
 }
 
-Cat.prototype.render = function () {
-  // Create a new Element
-  // add a text to the new element
-  // append the child to the parent
-  // this.getAge(3, 12);
+function checkUser(event) {
+  event.preventDefault();
+    let userName = event.target.name.value;
+  let userPassword = event.target.password.value;
+
+  let userinfo = JSON.parse(localStorage.getItem('userData'));
+  if (userinfo) {
+    for (let index = 0; index < userinfo.length; index++) {
+
+      if ((userinfo[index].name === userName) && (userinfo[index].password === userPassword)&&(userinfo[index].isInstructor===true)) {
+        coursesNames.style.display = "flex";
+        break;
+      } else {
+        alert('You are not instructor');
+        break;
+      }
+    }
+
+
+  }
+}
+loginToCnfirme.addEventListener('submit', checkUser);
+
+Add.prototype.render = function () {
+  
   let articleElement = document.createElement('article');
   allCourses.appendChild(articleElement);
 
@@ -61,12 +80,10 @@ function formSubmission(event) {
   let img = event.target.courseImage.value.split(',');
   let cost = event.target.cost.value;
 
-  let newCat = new Cat(name,description, cost,  instructor, img);
-  newCat.render();
+  let newAdd = new Add(name,description, cost,  instructor, img);
+  newAdd.render();
 
-  console.log(newCat);
+  console.log(newAdd);
 }
 
 addcourse.addEventListener('submit', formSubmission);
-
-// console.log(getRandomNumber(3, 12))
