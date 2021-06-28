@@ -126,6 +126,9 @@ header nav a:hover::after {
   font-size: 36px;
   margin-bottom: 20px;
 }
+.text-box span {
+  color: #5cc3db;
+}
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -133,14 +136,15 @@ header nav a:hover::after {
   border: 1px solid #fff;
   border-radius: 25px;
   padding: 12px 34px;
-  font-size: 15px;
+  font-size: 18px;
   background: transparent;
   position: relative;
   cursor: pointer;
 }
 .btn:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
+  border: 1px solid #5cc3db;
+  background: #5cc3db;
+  color: #000;
   transition: 1s;
 }
 .courses {
@@ -203,7 +207,7 @@ header nav a:hover::after {
 }
 .coursesBox div:hover button {
   opacity: 1;
-  top: -85px;
+  top: -100px;
 }
 .heading1 {
   margin-top: 10px;

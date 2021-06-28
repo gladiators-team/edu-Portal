@@ -231,6 +231,12 @@ function createComment(event) {
   let newComment = new Comments(name, massege);
   render(name, massege);
   localStorage.setItem('data', JSON.stringify(Comments.allComments));
+  Swal.fire({
+    icon: 'success',
+    title: 'Thank you for your comment!',
+    showConfirmButton: false,
+    timer: 1500,
+  })
   commentForm.reset();
 }
 commentForm.addEventListener('submit', createComment);
