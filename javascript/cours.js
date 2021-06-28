@@ -125,11 +125,3 @@ function addToCart(event) {
   localStorage.setItem('cart', JSON.stringify(cartItems));
 }
 renderCourses.addEventListener('click', addToCart);
-
-function getData() {
-  let cartData = JSON.parse(localStorage.getItem('cart'));
-  if (cartData) {
-    cartItems = cartData;
-  }
-}
-getData();
