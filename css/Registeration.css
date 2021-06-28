@@ -92,9 +92,6 @@ fieldset {
 
 
  
-  main {
-    background-image: url(https://www.ramstarab.com/wp-content/uploads/2018/09/%D8%AE%D9%84%D9%81%D9%8A%D8%A9-%D8%A8%D9%8A%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D9%88%D8%A7%D9%86.jpg)
-  }
 
 
 .forms {
@@ -102,6 +99,20 @@ fieldset {
   
   
 }
+ 
+
+#backgroundimg{
+  position:relative;
+  background-image: url('../homepage/img1/image1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover ;
+  z-index: -10;
+  width: 100%;
+    height: auto;
+}
+  
 
 
 .firstForm  form div {
@@ -113,7 +124,9 @@ fieldset {
 }
 
 legend {
-  font-size: 30px;
+  font-size: 50px;
+  color :rgb(46, 180, 180);
+  font-weight: 900;
 }
 .submit1 {
   margin-left: 200px;
