@@ -13,6 +13,22 @@ showName();
 
 let showDataCart = document.getElementById('showDataCart');
 let tableCart = document.getElementById('tableCart');
+
+let cartItems = [];
+function getData() {
+  let cartData = JSON.parse(localStorage.getItem('cart'));
+  if (cartData) {
+    cartItems = cartData;
+  }
+}
+getData();
+
+function clearCart() {
+  while (tableCart.firstChild) {
+    tableCart.removeChild(tableCart.firstChild);
+  }
+}
+
 function renderData() {
   let data = JSON.parse(localStorage.getItem('cart'));
   console.log(data);
@@ -40,15 +56,11 @@ renderData();
 
 function deleteCourse(event) {
   console.log(event.target.id);
-  cartItems.splice(0, 1);
-  console.log(cartItems);
+  cartItems.splice(event.target.id, 1);
+  localStorage.removeItem('cart');
+  localStorage.setItem('cart', JSON.stringify(cartItems));
+  clearCart();
+  renderData();
 }
 
 tableCart.addEventListener('click', deleteCourse);
-let cartItems = [];
-
-let cartData = JSON.parse(localStorage.getItem('cart'));
-if (cartData) {
-  cartItems = cartData;
-}
-console.log(cartItems);
