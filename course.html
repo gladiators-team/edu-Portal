@@ -54,30 +54,79 @@
         you climb the mountain of success through our local educational dictionary.
       </p>
       <div class="coursesBox" id="coursesBox">
-        <div class="course1">
+        <div class="course1" id="design">
           <img src="homepage/img/icon1.png" alt="">
           <h2 class="heading1">Design</h2>
-          <button type="submit" id="showCourses1">Show courses</button>
+          <button  id="showCourses1">Show courses</button>
         </div>
-        <div class="course2">
+        <div class="course2" id="programming">
           <img src="homepage/img/icon2.png" alt="">
           <h2 class="heading1">Programming</h2>
-          <button type="submit" id="showCourses2">Show courses</button>
+          <button  id="showCourses2">Show courses</button>
         </div>
-        <div class="course3">
+        <div class="course3" id="markiting">
           <img src="homepage/img/icon3.png" alt="">
           <h2 class="heading1">Marketing</h2>
-          <button type="submit" id="showCourses3">Show courses</button>
+          <button  id="showCourses3">Show courses</button>
         </div>
       </div>
     </section>
-    <section id="renderCourses">
+
+    <section id="showCourses">
+
+      <div>
+        <form action="" id="loginToCnfirme">
+          <label for="">name</label>
+          <input type="text" id="name">
+          <label for="">password</label>
+          <input type="password" id="password">
+          <button type="submit" id="submitNewCourse">Confirme</button>
+        </form>
+      </div>
+
+
+
+      <div id="coursesNames" style="display: none">
+        <fieldset>
+          <legend>Add New Course</legend>
+          <form id="addcourse" action="course.html">
+            <label for="CourseName">Course Name</label>
+            <input type="text" name="CourseName" id="CourseName" placeholder="">
+
+            <label for="CourseDescription">Description</label>
+            <input type="text" name="description" id="description">
+
+            <label for="instructor">instructor Name</label>
+            <input type="text" name="instructor" id="instructor">
+
+            <label for="cost">Cost</label>
+            <input type="number" name="cost" id="cost">
+
+            <label for="courseImage">Image</label>
+            <input type="text" name="courseImage" id="courseImage"
+              placeholder="https://www.w3schools.com/html/html_form_elements.asp">
+
+            <select id="select">
+              <option value="0">design</option>
+              <option value="1">programming</option>
+              <option value="2">marketing</option>
+            </select>
+            <button type="submit" id="addCourse">Add</button>
+          </form>
+        </fieldset>
+      </div>
+
+
+      <div id="allCourses">
+        <div id="displayData"></div>
+
+      </div>
     </section>
   </main>
   <footer>
     <p>Copy Right Resarved 2020 &copy; EDU-Portal </p>
   </footer>
-  <script src="javascript/cours.js"></script>
+  <script src="/javascript/addCorurse.js"></script>
 </body>
 
 </html>

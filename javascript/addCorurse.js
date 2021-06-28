@@ -1,24 +1,29 @@
 
 
 'use strict';
+let showCourses=document.getElementById('showCourses');
 let loginToCnfirme=document.getElementById('loginToCnfirme');
 let addcourse = document.getElementById('addcourse')
 let displayData=document.getElementById('displayData');
+let design=document.getElementById('showCourses1');
+let showCourses2=document.getElementById('showCourses2');
+let showCourses3=document.getElementById('showCourses3');
 
 
 
-function Add(name, discription, cost,  instructor, image) {
+function Add(name, discription, cost,  instructor, image,department) {
   this.name = name;
   this.discription = discription;
   this.cost = cost;
-
+  this.department;department;
   this.image = image;
   this.instructor = instructor;
+  Add.all.push(this);
 }
-
+Add.all=[];
 function checkUser(event) {
   event.preventDefault();
-    let userName = event.target.name.value;
+  let userName = event.target.name.value;
   let userPassword = event.target.password.value;
 
   let userinfo = JSON.parse(localStorage.getItem('userData'));
@@ -41,36 +46,29 @@ loginToCnfirme.addEventListener('submit', checkUser);
 
 Add.prototype.render = function () {
   
-  let articleElement = document.createElement('article');
-  allCourses.appendChild(articleElement);
-
-  let nameTitle = document.createElement('h2');
-  articleElement.appendChild(nameTitle);
-  nameTitle.textContent = `${this.name}`;
-
-  let ul = document.createElement('ul');
-  displayData.appendChild(ul);
-  let li = document.createElement('li');
-  ul.appendChild(li)
-  li.textContent=this.discription;
+   
+    let nameTitle = document.createElement('h2');
+    showCourses.appendChild(nameTitle);
+    nameTitle.textContent = `${this.name}`;
   
-  let li2 =document.createElement('li');
-  ul.appendChild(li2)
-  li2.textContent=this.cost;
-  
-  let img =document.createElement('img');
-  img.src=this.image;
-    displayData.appendChild(img);
-
-
-
+    let ul = document.createElement('ul');
+    showCourses.appendChild(ul);
+    let li = document.createElement('li');
+    ul.appendChild(li)
+    li.textContent=this.discription;
+    
+    let li2 =document.createElement('li');
+    ul.appendChild(li2)
+    li2.textContent=this.cost;
+    
+    let img =document.createElement('img');
+    img.src=this.image;
+    showCourses.appendChild(img);  
   
 
+  
 
 }
-
-
-
 
 function formSubmission(event) {
   event.preventDefault();
@@ -79,11 +77,21 @@ function formSubmission(event) {
   let instructor = event.target.instructor.value;
   let img = event.target.courseImage.value.split(',');
   let cost = event.target.cost.value;
-
-  let newAdd = new Add(name,description, cost,  instructor, img);
+  let department= event.target.select.value;
+  let newAdd = new Add(name,description, cost,  instructor, img,department);
   newAdd.render();
-
+  localStorage.setItem('course',JSON.stringify(newAdd));
   console.log(newAdd);
 }
 
 addcourse.addEventListener('submit', formSubmission);
+
+console.log(Add.department);
+function bt1(e){
+  Add.render();
+}
+if (Add.department ==="design") {
+  console.log('hello')
+  design.addEventListener('click',bt1);
+  
+}
