@@ -5,6 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="./css/about.css">
+    <style>
+        div.gallery {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content:center;
+            align-items: center;
+
+            margin: 5px;
+            border: 1px solid rgb(156, 44, 44);
+
+            width: 100%;
+            height: auto;
+        }
+        div.gallery2 {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content:flex-end;
+            align-items: center;
+
+            margin: 5px;
+            border: 1px solid rgb(156, 44, 44);
+
+            width: 100%;
+            height: auto;
+        }
+
+        div.gallery:hover {
+            border: 1px solid rgb(17, 16, 16);
+        }
+
+        div.gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: fill;
+
+
+        }
+
+        .desc1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .desc2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .h21 {
+            padding: 15px;
+            margin-left: 10px;
+        }
+
+        .h22 {
+            padding: 15px;
+            float: inline-start;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -24,85 +85,85 @@
     </div>
 
     <h2 style="text-align:center">Our Team</h2>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <img src="./img/newphoto.jpg" alt="Adham" style="width:100%">
-                <div class="container">
-                    <h2>Adham Mhaydat</h2>
-                    <p class="title">software engineer </p>
+    <section class="section">
+        
+        <div class="gallery">
+            <div style="width: 200px;"><img src="./img/newphoto.jpg" alt="Cinque Terre"
+                    style="object-fit:fill;width: 100%;"></div>
+
+
+            <div class="desc1">
+                <div>
+                    <h2 class="h21">Adham Mhaydat</h2>
+                </div><br>
+                <div>
                     <p>My name is Adham Mhaydat, I was born in Jordan, I am 23 years old and i live in Irbid, I studied
                         software engineering at the Al-Hussein Bin Talal University.</p>
-                    <p>adhammohidat123@gmail.com</p>
-                    <a href="adhammohidat123@gmail.com"> Email</a>
-
                 </div>
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
-                <img src="./img/TNGRRLUMA-U022P8DUUBE-8630116b66a4-512.png" alt="Ghofran" style="width:100%">
-                <div class="container">
-                    <h2>Ghofran aljabr</h2>
-                    <p class="title">Pharmacist </p>
-                    <p>Pharmacist Graduated in 2021 and software developer student Graduated in 2021.</p>
-                    <p>ghofran.gorro@gmail.com</p>
+        <div class="gallery2">
 
-                </div>
+
+
+            <div class="desc2">
+                <h2 class="h22" >Ghofran aljabr</h2><br>
+                <p>Pharmacist Graduated in 2021 and software developer student Graduated in 2021.</p>
+                
+            </div>
+            <div style="width: 200px;"><img style="width: 100%;float: right;" src="./img/TNGRRLUMA-U022P8DUUBE-8630116b66a4-512.png" alt="Cinque Terre"
+                    style="object-fit:fill;width: 100%;"></div>
+        </div>
+
+        <div class="gallery">
+            <div style="width: 200px;"><img src="./img/TNGRRLUMA-U022H3L4QTC-879e2b7232a2-512.png" alt="Cinque Terre"
+                    style="object-fit:fill;width: 100%;"></div>
+
+
+            <div class="desc1">
+                <h2 class="h21">Afnan Shihab</h2><br>
+                <p>I'm Afnan Shihab . I'm electrical engineer, I live in Jordan but I'm come from Gaza . Graduated
+                    in 2015 from Al Balqaa university . I worked for 4 years. And I had ASAC course .</p>
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
-                <img src="./img/TNGRRLUMA-U022H3L4QTC-879e2b7232a2-512.png" alt="Afnan" style="width:100%">
-                <div class="container">
-                    <h2>Afnan Shihab</h2>
-                    <p class="title">electrical engineer </p>
-                    <p>I'm Afnan Shihab . I'm electrical engineer, I live in Jordan but I'm come from Gaza . Graduated
-                        in 2015 from Al Balqaa university . I worked for 4 years. And I had ASAC course .</p>
-                    <p>afnan.shihab@yahoo.com</p>
+        <div class="gallery2">
 
-                </div>
+
+
+            <div class="desc2">
+                <h2 class="h22">Ahmad Abdulraheem</h2><br>
+                <p>25 years old engineer, lives in Jordan.</p>
+            </div>
+            <div style="width: 200px;"><img src="./image/ahmed.jpeg" alt="Cinque Terre"
+                    style="object-fit:fill;width: 100%;"></div>
+        </div>
+        <div class="gallery" style="justify-content: flex-start;">
+            <div style="width: 200px;"><img src="./img/TNGRRLUMA-U022AA4RWMU-b8e83c07318a-512.png" alt="Cinque Terre"
+                    style="object-fit:fill;width: 100%;"></div>
+
+
+            <div class="desc1">
+                <h2 class="h21">Moayad Osama Alhaj</h2><br>
+                <p>I am an engineer who is interested in programming and learning new things in tech field.</p>
             </div>
         </div>
-        <div class="column">
-            <div class="card">
-                <img src="/w3images/team2.jpg" alt="Ahmad" style="width:100%">
-                <div class="container">
-                    <h2>Ahmad Abdulraheem</h2>
-                    <p class="title">engineer</p>
-                    <p>25 years old engineer, lives in Jordan.</p>
-                    <p>Ahmad.abdulrahem@outlook.com</p>
 
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <img src="./img/TNGRRLUMA-U022AA4RWMU-b8e83c07318a-512.png" alt="Moayad" style="width:100%">
-                <div class="container">
-                    <h2>Moayad Osama Alhaj </h2>
-                    <p class="title">engineer</p>
-                    <p>I am an engineer who is interested in programming and learning new things in tech field.</p>
-                    <p>moayad.alhaj21@gmail.com</p>
+        <div class="gallery2">
 
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <img src="./img/TNGRRLUMA-U022H3KGKPC-a7e4c039b230-512.png" alt="Tawfeeq" style="width:100%">
-                <div class="container">
-                    <h2>Tawfeeq Al-Najjar</h2>
-                    <p class="title">Architect</p>
-                    <p>Instructor | Architect | Graphic Designer | Interior Designer | UX Designer.</p>
-                    <p>t.alnajjar@saejordan.com</p>
 
-                </div>
+
+            <div class="desc2">
+                <h2 class="h22">Tawfeeq Al-Najjar</h2><br>
+                <p>Instructor | Architect | Graphic Designer | Interior Designer | UX Designer.</p>
             </div>
+            <div style="width: 200px;"><img src="./img/TNGRRLUMA-U022H3KGKPC-a7e4c039b230-512.png" alt="Cinque Terre"
+                    style="object-fit:fill;width: 100%;"></div>
         </div>
-    </div>
+
+
+
 
 </body>
 
