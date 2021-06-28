@@ -6,6 +6,11 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+.section{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 20px;
+}
 body {
   width: 100%;
 }
