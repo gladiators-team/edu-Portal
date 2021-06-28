@@ -7,13 +7,22 @@
      <title>Document</title>
  </head>
  <body>
-    <fieldset>
+     <div>
+         <form action="" id="loginToCnfirme">
+             <label for="">name</label>
+             <input type="text" id="name"> 
+             <label for="">password</label>
+             <input type="password" id="password">
+             <button type="submit" id="submitNewCourse">Confirme</button>
+         </form>
+     </div>
+   
 
      
-    <div id="coursesNames"> 
-
+    <div id="coursesNames" style="display: none"> 
+        <fieldset>
         <legend>Add New Course</legend>
-        <form id="addcourse">
+        <form id="addcourse" >
           <label for="CourseName">Course Name</label>
           <input type="text" name="CourseName" id="CourseName" placeholder="">
   
@@ -32,9 +41,9 @@
           
           <button type="submit" id="addCourse">Add</button>
         </form>
- 
+    </fieldset>
 </div>
-</fieldset>
+
 
 <div id="allCourses">
     <div id="displayData"></div>
@@ -42,5 +51,5 @@
 </div>
 
  </body>
- <script src="./addCorurse.js"></script>
+ <script src="./javascript/addCorurse.js"></script>
  </html>

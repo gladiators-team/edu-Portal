@@ -138,7 +138,7 @@ header nav a:hover::after {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-}
+
 .btn:hover {
   border: 1px solid #5cc3db;
   background: #5cc3db;
