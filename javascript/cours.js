@@ -65,17 +65,18 @@ function render(courses) {
 let courseTypeId;
 function showResults(event) {
   courseTypeId = event.target.id;
-  console.log(courseTypeId);
-  let courses;
-  if (event.target.id === 'showCourses1') {
-    courses = designCourses;
-    render(courses);
-  } else if (event.target.id === 'showCourses2') {
-    courses = programmingCourse;
-    render(courses);
-  } else if (event.target.id === 'showCourses3') {
-    courses = marketingCourse;
-    render(courses);
+  if (courseTypeId) {
+    let courses;
+    if (event.target.id === 'showCourses1') {
+      courses = designCourses;
+      render(courses);
+    } else if (event.target.id === 'showCourses2') {
+      courses = programmingCourse;
+      render(courses);
+    } else if (event.target.id === 'showCourses3') {
+      courses = marketingCourse;
+      render(courses);
+    }
   }
 }
 
@@ -85,22 +86,37 @@ showCourses.addEventListener('click', showResults);
 let courseForm = document.getElementById('courseForm');
 
 function addCourse(event) {
+  console.log(event);
+  if (courseForm.style.visibility === 'hidden') {
+    courseForm.style.visibility = 'visible';
+  } else {
+    courseForm.style.visibility = 'hidden';
+  }
   event.preventDefault();
   let courseName = event.target.courseName.value;
   let instructorName = event.target.instructorName.value;
-  let cost = event.target.cost.value;
+  let cost = `$${event.target.cost.value}`;
   let description = event.target.description.value;
   let courseType = event.target.courseType.value;
   if (courseType === 'design') {
     designCourses.push([courseName, instructorName, cost, description]);
     render(designCourses);
+    courseTypeId = 'showCourses1';
   } else if (courseType === 'programming') {
     programmingCourse.push([courseName, instructorName, cost, description]);
     render(programmingCourse);
+    courseTypeId = 'showCourses2';
   } else if (courseType === 'marketing') {
     marketingCourse.push([courseName, instructorName, cost, description]);
     render(marketingCourse);
+    courseTypeId = 'showCourses3';
   }
+  Swal.fire({
+    icon: 'success',
+    title: 'This course has been added',
+    showConfirmButton: false,
+    timer: 1500,
+  })
   courseForm.style.visibility = 'hidden';
   courseForm.reset();
 }
@@ -109,19 +125,36 @@ courseForm.addEventListener('submit', addCourse);
 
 let showbtn = document.getElementById('showbtn');
 function showfom(event) {
-  courseForm.style.visibility = 'visible';
+  if (courseForm.style.visibility === 'visible') {
+    courseForm.style.visibility = 'hidden';
+    showbtn.textContent = 'Add Course';
+  } else {
+    courseForm.style.visibility = 'visible';
+    showbtn.textContent = 'close';
+  }
 }
 showbtn.addEventListener('click', showfom);
+
 let cartItems = [];
+
 function addToCart(event) {
-  console.log(designCourses[event.target.id]);
-  if (courseTypeId === 'showCourses1' && !cartItems.includes(designCourses[event.target.id])) {
-    cartItems.push(designCourses[event.target.id]);
-  } else if (courseTypeId === 'showCourses2' && !cartItems.includes(programmingCourse[event.target.id])) {
-    cartItems.push(programmingCourse[event.target.id]);
-  } else if (courseTypeId === 'showCourses3' && !cartItems.includes(marketingCourse[event.target.id])) {
-    cartItems.push(marketingCourse[event.target.id]);
+  if (event.target.id) {
+    if (courseTypeId === 'showCourses1' && !cartItems.includes(designCourses[event.target.id])) {
+      cartItems.push(designCourses[event.target.id]);
+    } else if (courseTypeId === 'showCourses2' && !cartItems.includes(programmingCourse[event.target.id])) {
+      cartItems.push(programmingCourse[event.target.id]);
+    } else if (courseTypeId === 'showCourses3' && !cartItems.includes(marketingCourse[event.target.id])) {
+      cartItems.push(marketingCourse[event.target.id]);
+    }
   }
   localStorage.setItem('cart', JSON.stringify(cartItems));
 }
 renderCourses.addEventListener('click', addToCart);
+
+function getData() {
+  let cartData = JSON.parse(localStorage.getItem('cart'));
+  if (cartData) {
+    cartItems = cartData;
+  }
+}
+getData();
