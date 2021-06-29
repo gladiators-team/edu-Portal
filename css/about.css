@@ -2,6 +2,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  padding: 0;
 }
 .header-content {
   display: flex;
@@ -22,6 +23,7 @@ header nav a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 8px 12px;
+  font-size: 16px;
 }
 header nav a:hover {
   background: #fff;
@@ -42,8 +44,6 @@ body {
   font-size: 14px;
   background-color: #e5e9ed;
 }
-
-/* entire container, keeps perspective */
 .card-container {
   display: grid;
   grid-template-columns: 400px 400px;
@@ -68,9 +68,6 @@ body {
   -o-transform: none;
   transform: none;
 }
-
-/* flip the pane when hovered */
-/* flip speed goes here */
 .card {
   -webkit-transition: -webkit-transform 0.5s;
   -moz-transition: -moz-transform 0.5s;
@@ -83,8 +80,6 @@ body {
   transform-style: preserve-3d;
   position: relative;
 }
-
-/* hide back of pane during swap */
 .front,
 .back {
   -webkit-backface-visibility: hidden;
@@ -97,13 +92,9 @@ body {
   background-color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
 }
-
-/* front pane, placed above back */
 .front {
   z-index: 2;
 }
-
-/* back, initially hidden pane */
 .back {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -111,14 +102,11 @@ body {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-
-/*        Style*/
 .card {
   background: none repeat scroll 0 0 #ffffff;
   border-radius: 4px;
   color: #444444;
 }
-
 .card-container,
 .front,
 .back {
@@ -126,7 +114,6 @@ body {
   height: 420px;
   border-radius: 4px;
 }
-
 .card .cover {
   height: 105px;
   overflow: hidden;
@@ -201,8 +188,6 @@ body {
   padding-bottom: 10px;
   text-align: center;
 }
-
-/*      Just for presentation*/
 .title {
   padding: 50px;
   color: #506a85;
@@ -216,27 +201,22 @@ body {
   font-size: 17px;
   color: rgb(78, 76, 76);
 }
-
 .space-50 {
   height: 50px;
   display: block;
 }
-
 .space-200 {
   height: 200px;
   display: block;
 }
-
 .white-board {
   background-color: #ffffff;
   min-height: 200px;
   padding: 60px 60px 20px;
 }
-
 .ct-heart {
   color: #f74933;
 }
-
 pre.prettyprint {
   background-color: #ffffff;
   border: 1px solid #999;
@@ -244,26 +224,21 @@ pre.prettyprint {
   padding: 20px;
   text-align: left;
 }
-
 .atv,
 .str {
   color: #05ae0e;
 }
-
 .tag,
 .pln,
 .kwd {
   color: #3472f7;
 }
-
 .atn {
   color: #2c93ff;
 }
-
 .pln {
   color: #333;
 }
-
 .com {
   color: #999;
 }
