@@ -5,168 +5,470 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/about.css">
-    <style>
-        div.gallery {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-
-            margin: 5px;
-            border: 1px solid rgb(156, 44, 44);
-
-            width: 100%;
-            height: auto;
-        }
-
-        div.gallery2 {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: flex-end;
-            align-items: center;
-
-            margin: 5px;
-            border: 1px solid rgb(156, 44, 44);
-
-            width: 100%;
-            height: auto;
-        }
-
-        div.gallery:hover {
-            border: 1px solid rgb(17, 16, 16);
-        }
-
-        div.gallery img {
-            width: 200px;
-            height: 200px;
-            object-fit: fill;
-
-
-        }
-
-        .desc1 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .desc2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
-        .h21 {
-            padding: 15px;
-            margin-left: 10px;
-        }
-
-        .h22 {
-            padding: 15px;
-            float: inline-start;
-
-        }
-    </style>
+    
 </head>
 
 <body>
-
-    <div class="about-section">
-        <h1>About Us </h1>
-        <p>Our story</p>
-        <p> we are gladiators-team we Create this page with a vision of providing life-transforming learning experiences
-            to learners around the world. Today, edu portal is a global online learning platform that offers anyone,
-            anywhere, access to online courses and also that he is the maker of the course if he finds that he has the
-            ability to teach Therefore, this site allows you to be a student and teacher of the subjects you master and
-            teach to your colleagues in exchange for a sum of money and this is to help outstanding students to
-            financial independence during the academic stage, which means that we have a legal duty not only to our
-            shareholders, but to also make a positive impact on society more broadly, as we continue our efforts to
-            reduce barriers to world-class education for all.</p>
-
-    </div>
-
-    <h2 style="text-align:center">Our Team</h2>
-    <section class="section">
-
-        <div class="gallery">
-            <div style="width: 200px;"><img src="img/newphoto.jpg" alt="Cinque Terre"
-                    style="object-fit:fill;width: 100%;"></div>
-
-
-            <div class="desc1">
-                <div>
-                    <h2 class="h21">Adham Mhaydat</h2>
-                </div><br>
-                <div>
-                    <p>My name is Adham Mhaydat, I was born in Jordan, I am 23 years old and i live in Irbid, I studied
-                        software engineering at the Al-Hussein Bin Talal University.</p>
+    <header>
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html"><img src="homepage/img1/LOGGO.png" alt="edu portal logo"></a>
+          </div>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="course.html">Courses</a>
+            <a href="cart.html" target="_blank">Cart</a>
+            <a href="login.html" target="_blank">Log in</a>
+          </nav>
+        </div>
+      </header>
+    
+    <div class="container">
+        <div class="row" >
+          <h1 class="title">
+            This Is Our Awesome Team<br /><small style="margin-top:20px ">we are gladiators-team we Create this page with a vision of providing life-transforming learning experiences
+                to learners around the world. Today, edu portal is a global online learning platform that offers anyone,
+                anywhere, access to online courses and also that he is the maker of the course if he finds that he has the
+                ability to teach Therefore, this site allows you to be a student and teacher of the subjects you master and
+                teach to your colleagues in exchange for a sum of money and this is to help outstanding students to
+                financial independence during the academic stage, which means that we have a legal duty not only to our
+                shareholders, but to also make a positive impact on society more broadly, as we continue our efforts to
+                reduce barriers to world-class education for all.</small>
+          </h1>
+          <div class="col-sm-10 col-sm-offset-1"  style="display: grid;grid-template-columns: 400px 400px 400px;gap: 50px;justify-content: center;">
+            <div class="col-md-4 col-sm-6">
+              <div class="card-container">
+                <div class="card">
+                  <div class="front">
+                    <div class="cover">
+                      <img src="image/Cover 6.jpg" />
+                    </div>
+                    <div class="user">
+                      <img class="img-circle" src="image/adham.jpg" />
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h3 class="name">
+                          Adham Mhaydat
+                        </h3>
+                        <p class="profession">
+                          Team Leader
+                        </p>
+                        <h5>
+                          <i class="fa fa-map-marker fa-fw text-muted"></i>Jordan, Irbid
+                        </h5>
+                        <h5>
+                          <i class="fa fa-building-o fa-fw text-muted"></i>Gladiators Team.
+                        </h5>
+                        <h5>
+                          <i class="fa fa-envelope-o fa-fw text-muted"></i>adhammhidat123@gmail.com
+                        </h5>
+                      </div>
+                      <div class="footer">
+                        <div class="rating">
+                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end front panel-->
+                  <div class="back">
+                    <div class="header">
+                      <h5 class="motto">
+                        "To be or not to be, this is my awesome motto!"
+                      </h5>
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h4 class="text-center">
+                          Experince
+                        </h4>
+                        <p>
+                          Web Developer In ASAC/LTUC
+                        </p>
+                        <h4 class="text-center">
+                          Areas of Expertise
+                        </h4>
+                        <p>
+                          Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...
+                        </p>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="social-links text-center">
+                        <a class="facebook" href="http://cretive-tim.com"><i class="fa fa-facebook fa-fw"></i></a><a class="google" href="http://cretive-tim.com"><i class="fa fa-google-plus fa-fw"></i></a><a class="twitter" href="http://cretive-tim.com"><i class="fa fa-twitter fa-fw"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end back panel-->
                 </div>
+                <!--end card-->
+              </div>
+              <!--end card-container-->
             </div>
-        </div>
-
-        <div class="gallery2">
-
-
-
-            <div class="desc2">
-                <h2 class="h22">Ghofran aljabr</h2><br>
-                <p>Pharmacist Graduated in 2021 and software developer student Graduated in 2021.</p>
-
+            <!--end col-md-4 col-sm-6-->
+            <div class="col-md-4 col-sm-6">
+              <div class="card-container">
+                <div class="card">
+                  <div class="front">
+                    <div class="cover">
+                      <img src="image/cover_4.jpg" />
+                    </div>
+                    <div class="user">
+                      <img class="img-circle" src="./img/TNGRRLUMA-U022H3KGKPC-a7e4c039b230-512.png" />
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h3 class="name">
+                            Tawfeeq Al-Najjar
+                        </h3>
+                        <p class="profession">
+                          Web Developer
+                        </p>
+                        <h5>
+                          <i class="fa fa-map-marker fa-fw text-muted"></i>Jordan,Amman
+                        </h5>
+                        <h5>
+                          <i class="fa fa-building-o fa-fw text-muted"></i>Gladiators.
+                        </h5>
+                        <h5>
+                          <i class="fa fa-envelope-o fa-fw text-muted"></i>Tawfeeq@gladiators-team.com
+                        </h5>
+                      </div>
+                      <div class="footer">
+                        <div class="rating">
+                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end front panel-->
+                  <div class="back">
+                    <div class="header">
+                      <h5 class="motto">
+                        "To be or not to be, this is my awesome motto!"
+                      </h5>
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h4 class="text-center">
+                          Experince
+                        </h4>
+                        <p>
+                          Web Programmer IN ASAC/LTUC
+                        </p>
+                        <h4 class="text-center">
+                          Areas of Expertise
+                        </h4>
+                        <p>
+                          Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...
+                        </p>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="social-links text-center">
+                        <a class="facebook" href="http://cretive-tim.com"><i class="fa fa-facebook fa-fw"></i></a><a class="google" href="http://cretive-tim.com"><i class="fa fa-google-plus fa-fw"></i></a><a class="twitter" href="http://cretive-tim.com"><i class="fa fa-twitter fa-fw"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end back panel-->
+                </div>
+                <!--end card-->
+              </div>
+              <!--end card-container-->
             </div>
-            <div style="width: 200px;"><img style="width: 100%;float: right;"
-                    src="img/TNGRRLUMA-U022P8DUUBE-8630116b66a4-512.png" alt="Cinque Terre"
-                    style="object-fit:fill;width: 100%;"></div>
-        </div>
-
-        <div class="gallery">
-            <div style="width: 200px;"><img src="img/TNGRRLUMA-U022H3L4QTC-879e2b7232a2-512.png" alt="Cinque Terre"
-                    style="object-fit:fill;width: 100%;"></div>
-
-
-            <div class="desc1">
-                <h2 class="h21">Afnan Shihab</h2><br>
-                <p>I'm Afnan Shihab . I'm electrical engineer, I live in Jordan but I'm come from Gaza . Graduated
-                    in 2015 from Al Balqaa university . I worked for 4 years. And I had ASAC course .</p>
+            <!--end col sm 3-->
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">
+                      <div class="cover">
+                        <img src="image/Cover 5.jpg" />
+                      </div>
+                      <div class="user">
+                        <img class="img-circle" src="img/TNGRRLUMA-U022AA4RWMU-b8e83c07318a-512.png" />
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h3 class="name">
+                            Moayad Osama Alhaj
+                          </h3>
+                          <p class="profession">
+                            Programmer
+                          </p>
+                          <h5>
+                            <i class="fa fa-map-marker fa-fw text-muted"></i>Jordan, Amman.                         </h5>
+                          <h5>
+                            <i class="fa fa-building-o fa-fw text-muted"></i>Gladiators.
+                          </h5>
+                          <h5>
+                            <i class="fa fa-envelope-o fa-fw text-muted"></i>Moayad@gladiators-team.com
+                          </h5>
+                        </div>
+                        <div class="footer">
+                          <div class="rating">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end front panel-->
+                    <div class="back">
+                      <div class="header">
+                        <h5 class="motto">
+                          "To be or not to be, this is my awesome motto!"
+                        </h5>
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h4 class="text-center">
+                            Experince
+                          </h4>
+                          <p>
+                            Programmer in ASAC/LTUC
+                          </p>
+                          <h4 class="text-center">
+                            Areas of Expertise
+                          </h4>
+                          <p>
+                            Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="footer">
+                        <div class="social-links text-center">
+                          <a class="facebook" href="http://cretive-tim.com"><i class="fa fa-facebook fa-fw"></i></a><a class="google" href="http://cretive-tim.com"><i class="fa fa-google-plus fa-fw"></i></a><a class="twitter" href="http://cretive-tim.com"><i class="fa fa-twitter fa-fw"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end back panel-->
+                  </div>
+                  <!--end card-->
+                </div>
+                <!--end card-container-->
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">
+                      <div class="cover">
+                        <img src="image/Cover 1.jpg" />
+                      </div>
+                      <div class="user">
+                        <img class="img-circle" src="img/TNGRRLUMA-U022P8DUUBE-8630116b66a4-512.png" />
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h3 class="name">
+                            Ghofran aljabr
+                          </h3>
+                          <p class="profession">
+                            Programmer
+                          </p>
+                          <h5>
+                            <i class="fa fa-map-marker fa-fw text-muted"></i>Jordan, Amman
+                          </h5>
+                          <h5>
+                            <i class="fa fa-building-o fa-fw text-muted"></i>Gladiators.
+                          </h5>
+                          <h5>
+                            <i class="fa fa-envelope-o fa-fw text-muted"></i>Ghofran@ gladiators-team.com
+                          </h5>
+                        </div>
+                        <div class="footer">
+                          <div class="rating">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end front panel-->
+                    <div class="back">
+                      <div class="header">
+                        <h5 class="motto">
+                          "To be or not to be, this is my awesome motto!"
+                        </h5>
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h4 class="text-center">
+                            Experince
+                          </h4>
+                          <p>
+                            Web Developer In ASAC/LTUC
+                          </p>
+                          <h4 class="text-center">
+                            Areas of Expertise
+                          </h4>
+                          <p>
+                            Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="footer">
+                        <div class="social-links text-center">
+                          <a class="facebook" href="http://cretive-tim.com"><i class="fa fa-facebook fa-fw"></i></a><a class="google" href="http://cretive-tim.com"><i class="fa fa-google-plus fa-fw"></i></a><a class="twitter" href="http://cretive-tim.com"><i class="fa fa-twitter fa-fw"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end back panel-->
+                  </div>
+                  <!--end card-->
+                </div>
+                <!--end card-container-->
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">
+                      <div class="cover">
+                        <img src="image/Cover 2.jpg" />
+                      </div>
+                      <div class="user">
+                        <img class="img-circle" src="image/ahmed.jpeg" />
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h3 class="name">
+                            Ahmad Abdulraheem
+                          </h3>
+                          <p class="profession">
+                            Programmer
+                          </p>
+                          <h5>
+                            <i class="fa fa-map-marker fa-fw text-muted"></i>Jordan, Amman
+                          </h5>
+                          <h5>
+                            <i class="fa fa-building-o fa-fw text-muted"></i>Gladiators.
+                          </h5>
+                          <h5>
+                            <i class="fa fa-envelope-o fa-fw text-muted"></i>ahmed@gladiators-team.com
+                          </h5>
+                        </div>
+                        <div class="footer">
+                          <div class="rating">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end front panel-->
+                    <div class="back">
+                      <div class="header">
+                        <h5 class="motto">
+                          "To be or not to be, this is my awesome motto!"
+                        </h5>
+                      </div>
+                      <div class="content">
+                        <div class="main">
+                          <h4 class="text-center">
+                            Experince
+                          </h4>
+                          <p>
+                            Web Developer in ASAC/LTUC
+                          </p>
+                          <h4 class="text-center">
+                            Areas of Expertise
+                          </h4>
+                          <p>
+                            Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="footer">
+                        <div class="social-links text-center">
+                          <a class="facebook" href="http://cretive-tim.com"><i class="fa fa-facebook fa-fw"></i></a><a class="google" href="http://cretive-tim.com"><i class="fa fa-google-plus fa-fw"></i></a><a class="twitter" href="http://cretive-tim.com"><i class="fa fa-twitter fa-fw"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end back panel-->
+                  </div>
+                  <!--end card-->
+                </div>
+                <!--end card-container-->
+              </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card-container">
+                <div class="card">
+                  <div class="front">
+                    <div class="cover">
+                      <img src="image/Cover 3.jpg" />
+                    </div>
+                    <div class="user">
+                      <img class="img-circle" src="img/TNGRRLUMA-U022H3L4QTC-879e2b7232a2-512.png" />
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h3 class="name">
+                            Afnan Shihab
+                        </h3>
+                        <p class="profession">
+                          Programmer
+                        </p>
+                        <h5>
+                          <i class="fa fa-map-marker fa-fw text-muted"></i>Jordan, Amman
+                        </h5>
+                        <h5>
+                          <i class="fa fa-building-o fa-fw text-muted"></i>Gladiators.
+                        </h5>
+                        <h5>
+                          <i class="fa fa-envelope-o fa-fw text-muted"></i>Afnan@gladiators-team.com
+                        </h5>
+                      </div>
+                      <div class="footer">
+                        <div class="rating">
+                          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end front panel-->
+                  <div class="back">
+                    <div class="header">
+                      <h5 class="motto">
+                        "To be or not to be, this is my awesome motto!"
+                      </h5>
+                    </div>
+                    <div class="content">
+                      <div class="main">
+                        <h4 class="text-center">
+                          Experince
+                        </h4>
+                        <p>
+                          Web Developer in ASAC/LTUC
+                        </p>
+                        <h4 class="text-center">
+                          Areas of Expertise
+                        </h4>
+                        <p>
+                          Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...
+                        </p>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="social-links text-center">
+                        <a class="facebook" href="http://cretive-tim.com"><i class="fa fa-facebook fa-fw"></i></a><a class="google" href="http://cretive-tim.com"><i class="fa fa-google-plus fa-fw"></i></a><a class="twitter" href="http://cretive-tim.com"><i class="fa fa-twitter fa-fw"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
-        <div class="gallery2">
-
-
-
-            <div class="desc2">
-                <h2 class="h22">Ahmad Abdulraheem</h2><br>
-                <p>25 years old engineer, lives in Jordan.</p>
-            </div>
-            <div style="width: 200px;"><img src="image/ahmed.jpeg" alt="Cinque Terre"
-                    style="object-fit:fill;width: 100%;"></div>
-        </div>
-        <div class="gallery" style="justify-content: flex-start;">
-            <div style="width: 200px;"><img src="img/TNGRRLUMA-U022AA4RWMU-b8e83c07318a-512.png" alt="Cinque Terre"
-                    style="object-fit:fill;width: 100%;"></div>
-
-
-            <div class="desc1">
-                <h2 class="h21">Moayad Osama Alhaj</h2><br>
-                <p>I am an engineer who is interested in programming and learning new things in tech field.</p>
-            </div>
-        </div>
-
-        <div class="gallery2">
-
-
-
-            <div class="desc2">
-                <h2 class="h22">Tawfeeq Al-Najjar</h2><br>
-                <p>Instructor | Architect | Graphic Designer | Interior Designer | UX Designer.</p>
-            </div>
-            <div style="width: 200px;"><img src="./img/TNGRRLUMA-U022H3KGKPC-a7e4c039b230-512.png" alt="Cinque Terre"
-                    style="object-fit:fill;width: 100%;"></div>
-        </div>
-
-
-
-
+      </div>
+    </section>  
+    <section class="footer">
+        <p class="text">Design By Gladiators Team</p>
+        <ul>
+          <p class="text">Follow Us</p>
+          <li><a href=""><img src="homepage/img/facebook.png" alt=""></a></li>
+          <li><a href=""><img src="homepage/img/twitter.png" alt=""></a></li>
+          <li><a href=""><img src="homepage/img/linkedin.png" alt=""></a></li>
+        </ul>
+      </section>
 </body>
 
 </html>
