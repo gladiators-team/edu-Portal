@@ -101,6 +101,7 @@ function addCourse(event) {
   if (courseType === 'design') {
     designCourses.push([courseName, instructorName, cost, description]);
     render(designCourses);
+    localStorage.setItem('designCourses', JSON.stringify(designCourses));
     courseTypeId = 'showCourses1';
   } else if (courseType === 'programming') {
     programmingCourse.push([courseName, instructorName, cost, description]);
@@ -151,10 +152,14 @@ function addToCart(event) {
 }
 renderCourses.addEventListener('click', addToCart);
 
-function getData() {
-  let cartData = JSON.parse(localStorage.getItem('cart'));
-  if (cartData) {
-    cartItems = cartData;
+function getData1() {
+  let designData = JSON.parse(localStorage.getItem('designCourses'));
+  let programmingData = JSON.parse(localStorage.getItem('designCourses'));
+  let marketingData = JSON.parse(localStorage.getItem('designCourses'));
+  if (designData) {
+    designCourses = designData;
+    programmingData = programmingData;
+    marketingData = marketingData;
   }
 }
-getData();
+getData1();
