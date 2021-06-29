@@ -86,7 +86,6 @@ showCourses.addEventListener('click', showResults);
 let courseForm = document.getElementById('courseForm');
 
 function addCourse(event) {
-  console.log(event);
   if (courseForm.style.visibility === 'hidden') {
     courseForm.style.visibility = 'visible';
   } else {
@@ -151,6 +150,14 @@ function addToCart(event) {
   localStorage.setItem('cart', JSON.stringify(cartItems));
 }
 renderCourses.addEventListener('click', addToCart);
+
+function getData() {
+  let cartData = JSON.parse(localStorage.getItem('cart'));
+  if (cartData) {
+    cartItems = cartData;
+  }
+}
+getData();
 
 function getData1() {
   let designData = JSON.parse(localStorage.getItem('designCourses'));
