@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./DoList.css">
+    <title>My list</title>
+</head>
+
+
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="intro">
+                <h1>List of To-Dos</h1>
+                <div>
+                    <div class="border1"></div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="helpText">
+                    <p id="first">Enter text into the input field to add items to your list.</p>
+                    <p id="second">Click the item to mark it as complete.</p>
+                    <p id="third">Click the "X" to remove the item from your list.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="add">
+                    <input id="userInput" type="text" placeholder="New item..." maxlength="27">
+                    <button id="enter"><i class="fas fa-pencil-alt">Add to list</i></button>
+                </div>
+            </div>
+
+           
+            <div class="row">
+                <div class="listItems">
+                    <ul class="listul">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="./DoList.js"></script>
+</body>
+
+</html>
+</html>
