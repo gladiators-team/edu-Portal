@@ -233,7 +233,7 @@ function createComment(event) {
   localStorage.setItem('data', JSON.stringify(Comments.allComments));
   Swal.fire({
     icon: 'success',
-    title: 'Thank you for your comment!',
+    title: 'Thank you for your feedback!',
     showConfirmButton: false,
     timer: 1500,
   })

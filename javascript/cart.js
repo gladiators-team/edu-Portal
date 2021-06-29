@@ -31,7 +31,6 @@ function clearCart() {
 
 function renderData() {
   let data = JSON.parse(localStorage.getItem('cart'));
-  console.log(data);
   if (data) {
     for (let i = 0; i < data.length; i++) {
       let divElement = document.createElement('div');
