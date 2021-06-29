@@ -160,7 +160,7 @@ body {
     min-height: 160px;
   }
   .card .back .content .main {
-    height: 215px;
+    height: 175px;
   }
   .card .name {
     font-size: 22px;
@@ -269,27 +269,27 @@ body {
   .com {
     color: #999;
   }
-  .footer {
+  footer {
     background: #162c3b;
     padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .footer ul {
+  footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .footer ul li {
+  footer ul li {
     list-style: none;
   }
-  .footer ul li a {
+  footer ul li a {
     text-decoration: none;
     display: inline-block;
     margin: 0 10px;
   }
-  .footer ul li a img {
+  footer ul li a img {
     width: 20px;
     height: 20px;
   }

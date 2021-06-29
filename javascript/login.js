@@ -16,15 +16,18 @@ function checkUser(event) {
       if ((userinfo[index].name === userName) && (userinfo[index].password === userPassword)) {
       
         
-        window.location.assign("/index.html");
+        window.location.assign("./index.html");
         break;
       } else {
-        Swal.fire('Incorrect Name Or Password')
+        Swal.fire('Incorrect Name Or Password');
         break;
       }
     }
 
 
+  }
+  if(!userinfo){
+    Swal.fire('Incorrect Name Or Password');
   }
 }
 formLogin.addEventListener('submit', checkUser);

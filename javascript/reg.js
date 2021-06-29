@@ -19,12 +19,13 @@ let major=e.target.major.value;
 
  new Registraion(name,password,isInstructor,major);
  saveToLocal();
+ Swal.fire('Incorrect Name Or Password');
  window.location.assign("/index.html");
 }
 regForm.addEventListener('submit',getUserData);
 
 function saveToLocal(){
-  Swal.fire('Incorrect Name Or Password')
+  
   
   localStorage.setItem('userData',JSON.stringify(Registraion.allData));
 }
