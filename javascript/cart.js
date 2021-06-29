@@ -36,17 +36,18 @@ function renderData() {
       let divElement = document.createElement('div');
       divElement.id = 'productContent';
       let pElement0 = document.createElement('p');
-      let h3Element1 = document.createElement('h3');
-      let h3Element2 = document.createElement('h3');
+      let pElement1 = document.createElement('p');
+      let pElement2 = document.createElement('p');
       let pElement3 = document.createElement('p');
       pElement0.id = i;
+      pElement0.id = 'deleteButton';
       pElement0.textContent = 'x';
-      h3Element1.textContent = data[i][0];
-      h3Element2.textContent = data[i][1];
+      pElement1.textContent = data[i][0];
+      pElement2.textContent = data[i][1];
       pElement3.textContent = data[i][2];
       divElement.appendChild(pElement0);
-      divElement.appendChild(h3Element1);
-      divElement.appendChild(h3Element2);
+      divElement.appendChild(pElement1);
+      divElement.appendChild(pElement2);
       divElement.appendChild(pElement3);
       tableCart.appendChild(divElement);
     }
@@ -55,7 +56,7 @@ function renderData() {
 renderData();
 
 function deleteCourse(event) {
-  if (event.target.id) {
+  if (event.target.id === 'deleteButton') {
     cartItems.splice(event.target.id, 1);
     localStorage.removeItem('cart');
     localStorage.setItem('cart', JSON.stringify(cartItems));

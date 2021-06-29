@@ -9,11 +9,11 @@
 body {
   width: 100%;
   display: grid;
-  grid-template-rows: 100vh 2fr 100px;
+  grid-template-rows: 450px 2fr 100px;
 }
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 500px;
   position: relative;
   overflow: hidden;
 }
@@ -117,7 +117,7 @@ header nav a:hover::after {
   width: 90%;
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -232,8 +232,8 @@ header nav a:hover::after {
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  margin-top: 100px;
-  grid-template-columns: repeat(4, 300px);
+  margin-top: 130px;
+  grid-template-columns: repeat(3, 300px);
   text-align: center;
   gap: 30px;
 }
@@ -242,7 +242,7 @@ header nav a:hover::after {
   height: 400px;
   margin-bottom: 50px;
   background-color: #2f5d62;
-  border-radius: 10px;
+  border-radius: 0 20px 0 20px;
   box-shadow: 0 0 15px #2f5d62;
 }
 .column h3 {
@@ -294,7 +294,7 @@ header nav a:hover::after {
   padding: 5px;
   height: 30px;
   border-radius: 2px;
-  top: -100px;
+  top: -90px;
   outline: none;
   cursor: pointer;
   background: #5cc3db;
@@ -307,14 +307,35 @@ header nav a:hover::after {
   opacity: 1;
 }
 footer {
-  background-color: #2f5d62;
+  background: #162c3b;
+  padding: 20px 100px;
   display: flex;
-  font-size: 18px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  display: flex;
   justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 5px;
+  align-items: center;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+footer ul li a img {
+  width: 20px;
+  height: 20px;
+}
+.text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 #addCorurse {
   position: absolute;
@@ -339,8 +360,13 @@ footer {
   width: 300px;
   height: 300px;
   background: #12222d;
-  padding: 10px;
+  padding: 10px 10 15px 10px;
   visibility: hidden;
+  border-radius: 20px 0 20px 0;
+}
+#courseForm div select {
+  width: 175px;
+  outline: none;
 }
 #courseForm div {
   outline: none;
@@ -352,4 +378,11 @@ footer {
   color: #000;
   outline: none;
   font-size: 18px;
+}
+#courseForm button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  cursor: pointer;
+  color: #12222d;
 }

@@ -15,38 +15,29 @@
 
 <body class="background-img">
     <main>
-        <!-- <h2>Text input fields</h2> -->
-
         <form id="formLogin">
             <fieldset>
-
                 <div class="formLogo">
                     <img src="https://www.adab.com/assets/images/default_profile.png" id="formLogo" alt="">
                 </div>
-                <br><br><br>
-                <label for="userName">Username</label><br>
-                <input type="text" id="username" name="userName" required><br>
-                <label for="lname">Password</label><br>
-                <input type="password" id="password" name="password" required><br>
+                <div class="inputStyle">
+                    <div>
+                        <label for="userName">Username</label><br>
+                        <input type="text" id="username" name="userName" required>
+                    </div>
+                    <div><label for="lname">Password</label><br>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </div>
                 <div class="center">
-
                     <button type="submit" value="submit" id="login">Login</button><br>
                     <div class="a">You don't have an Account?
                         <a href="Registeration.html">Create Account?</a>
                     </div>
-
                 </div>
-
-
-
-
             </fieldset>
-
         </form>
-
     </main>
-
-
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="javascript/login.js"></script>
