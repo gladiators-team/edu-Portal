@@ -19,7 +19,7 @@ function getUserData(e) {
 
   new Registraion(name, password, isInstructor, major);
   saveToLocal();
-  window.location.assign("/index.html");
+  window.location.assign("index.html");
 }
 regForm.addEventListener('submit', getUserData);
 

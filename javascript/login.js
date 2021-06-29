@@ -14,11 +14,7 @@ function checkUser(event) {
     for (let index = 0; index < userinfo.length; index++) {
       if ((userinfo[index].name === userName) && (userinfo[index].password === userPassword)) {
 
-      
-        
-        window.location.assign("./index.html");
-
-        window.location.assign("/index.html");
+        window.location.assign("index.html");
  
         break;
       } else {
@@ -29,8 +25,6 @@ function checkUser(event) {
   } else {
     Swal.fire('Please sign Up');
   }
-  if(!userinfo){
-    Swal.fire('Incorrect Name Or Password');
-  }
+  
 }
 formLogin.addEventListener('submit', checkUser);
