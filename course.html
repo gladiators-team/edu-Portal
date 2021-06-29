@@ -70,32 +70,35 @@
         </div>
       </div>
     </section>
-    <section id="addCorurse">
-      <div id="showbtn">
-        <p>Add Course</p>
+    <section>
+      <div id="modal"></div>
+      <div id="addCorurse">
+        <div id="showbtn">
+          <p>Add Course</p>
+        </div>
+        <form id="courseForm">
+          <div>
+            <select name="courseType" id="courseType">
+              <option value="design">Design</option>
+              <option value="programming">Programming</option>
+              <option value="marketing">Marketing</option>
+            </select>
+          </div>
+          <div>
+            <input type="text" id="courseName" name="courseName" placeholder="Course Name" required>
+          </div>
+          <div>
+            <input type="text" id="instructorName" name="instructorName" placeholder="Instructor Name" required>
+          </div>
+          <div>
+            <input type="number" id="cost" name="cost" placeholder="cost" required>
+          </div>
+          <div>
+            <input type="text" id="description" name="description" placeholder="description" required>
+          </div>
+          <button type="submit">Add Course</button>
+        </form>
       </div>
-      <form id="courseForm">
-        <div>
-          <select name="courseType" id="courseType">
-            <option value="design">Design</option>
-            <option value="programming">Programming</option>
-            <option value="marketing">Marketing</option>
-          </select>
-        </div>
-        <div>
-          <input type="text" id="courseName" name="courseName" placeholder="Course Name" required>
-        </div>
-        <div>
-          <input type="text" id="instructorName" name="instructorName" placeholder="Instructor Name" required>
-        </div>
-        <div>
-          <input type="number" id="cost" name="cost" placeholder="cost" required>
-        </div>
-        <div>
-          <input type="text" id="description" name="description" placeholder="description" required>
-        </div>
-        <button type="submit">Add Course</button>
-      </form>
     </section>
     <section id="renderCourses">
     </section>

@@ -34,8 +34,9 @@ form {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  filter: blur(0px);
   margin-top: 100px;
+  box-shadow: 0 0 10px #5cc3db;
+  border-radius: 60px;
 }
 .formLogo {
   display: block;
@@ -47,13 +48,16 @@ form {
   text-align: center;
 }
 .inputStyle label {
-  margin-left: -300px;
+  margin-left: -250px;
 }
 input {
-  width: 80%;
+  width: 70%;
   padding: 12px 20px;
   margin: 10px;
   box-sizing: border-box;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid #5cc3db;
 }
 label {
   margin-left: 20px;
@@ -102,6 +106,9 @@ legend {
 }
 .a {
   margin-left: -150px;
+}
+.a a {
+  text-decoration: none;
 }
 .alert {
   padding: 20px;

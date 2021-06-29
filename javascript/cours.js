@@ -122,14 +122,20 @@ function addCourse(event) {
 }
 
 courseForm.addEventListener('submit', addCourse);
-
+let modal = document.getElementById('modal');
 let showbtn = document.getElementById('showbtn');
 function showfom(event) {
   if (courseForm.style.visibility === 'visible') {
+    modal.style.display = 'none';
+    courseForm.style.marginTop = '-115px';
+    renderCourses.style.minHeight = '300px';
     courseForm.style.visibility = 'hidden';
     showbtn.textContent = 'Add Course';
   } else {
     courseForm.style.visibility = 'visible';
+    modal.style.display = 'block';
+    courseForm.style.marginTop = '0px';
+    renderCourses.style.minHeight = '600px';
     showbtn.textContent = 'close';
   }
 }

@@ -32,6 +32,8 @@ form {
   margin-right: auto;
   filter: blur(0px);
   margin-top: 100px;
+  box-shadow: 0 0 10px #5cc3db;
+  border-radius: 60px;
 }
 .formLogo {
   display: block;
@@ -50,6 +52,9 @@ input {
   padding: 12px 20px;
   margin: 10px;
   box-sizing: border-box;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid #5cc3db;
 }
 label {
   margin-left: 20px;
@@ -59,6 +64,7 @@ label {
   justify-content: space-around;
   align-items: center;
   margin: auto;
+  margin-top: 20px;
 }
 .selector p {
   margin-left: -70px;
@@ -131,18 +137,20 @@ button {
 
 .checkbox {
   margin-left: 50px;
-  font-size: 22px;
+  font-size: 20px;
 }
-div label {
-  width: 200px;
-  text-align: start;
-}
+
 #checkbox {
   width: 20px;
   height: 20px;
+  text-align: center;
+}
+.checkbox label {
+  width: 200px;
+  margin-left: 0;
 }
 .a a {
-  margin-left: 160px;
+  margin-left: 150px;
   text-decoration: none;
   cursor: pointer;
   color: #000;
