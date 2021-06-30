@@ -15,7 +15,7 @@ function checkUser(event) {
       if ((userinfo[index].name === userName) && (userinfo[index].password === userPassword)) {
 
         window.location.assign("index.html");
- 
+        localStorage.setItem('nameUser', JSON.stringify(userName));
         break;
       } else {
         Swal.fire('Incorrect Name Or Password');
@@ -25,6 +25,6 @@ function checkUser(event) {
   } else {
     Swal.fire('Please sign Up');
   }
-  
+
 }
 formLogin.addEventListener('submit', checkUser);
