@@ -117,7 +117,11 @@ function addCourse(event) {
     showConfirmButton: false,
     timer: 1500,
   })
+  modal.style.display = 'none';
+  courseForm.style.marginTop = '-115px';
+  renderCourses.style.minHeight = '300px';
   courseForm.style.visibility = 'hidden';
+  showbtn.textContent = 'Add Course';
   courseForm.reset();
 }
 
